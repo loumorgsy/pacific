@@ -1,373 +1,325 @@
-/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
+/* GLOBAL STYLES */
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab';
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
-}
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
-body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Helvetica, sans-serif;
 }
 
 .wrapper {
-    width: 90%;
-    margin: 0 5%;
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
 
-.header-container {
-    border-bottom: 20px solid #e44d26;
+
+#logo {
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.3em;
+  float: left;
 }
 
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
-}
-
-.header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
-}
-
-.title {
-    color: white;
-}
-
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+nav {
+  float: right;
+  color: white;
 }
 
 nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
+  color: white;
+  text-decoration: none;
+  padding-left: 40px;
+  font-size: 1.2em;
+  font-family: 'Roboto Slab', Helvetcia, serif;
 
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
 }
 
-nav a:hover,
-nav a:visited {
-    color: white;
+.content {
+  padding-top: 200px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+
+
+.tagline {
+  color: white;
+  text-align: center;
+  font-size: 4em;
+  margin: 0;
+
 }
 
-/* ==============
-    MOBILE: Main
-   ============== */
+header {
+  padding: 2rem;
 
-.main {
-    padding: 30px 0;
 }
 
-.main article h1 {
-    font-size: 2em;
+.button-wrapper {
+
+  text-align: center;
+  margin: 3rem 0;
 }
 
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
+.button-big {
+  color: white;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 2rem;
+  padding: .5rem 2rem;
+  margin: 0 2rem;
+  text-decoration: none;
+  background-color: #0090ff;
+  font-family: 'Roboto Slab';
+  border: solid 1px skyblue;
+  box-shadow: 0px 14px 21px 0px rgba(0, 0, 0, 0.24);
+
+
 }
 
-.footer-container footer {
-    color: white;
-    padding: 20px 0;
+
+
+/* BANNER STYLES */
+#banner {
+  height: 100vh;
+  background-image: url(/img/pacific-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-    padding-top: 20px;
+#services {
+  background-color: #e9f3ff;
+  margin: 0 auto;
+  padding: 60px;
+  height: 380px;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+.services-wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: #e9f3ff;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
 }
 
-@media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
-/* ============
-    WIDE: Menu
-   ============ */
-
-    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
-    }
-
-/* ============
-    WIDE: Main
-   ============ */
-
-    .main article {
-        float: left;
-        width: 57%;
-    }
-
-    .main aside {
-        float: right;
-        width: 28%;
-    }
+.seo, .photo, .branding {
+  padding: 60px 40px;
+  box-shadow: 0px 14px 21px 0px rgba(0, 0, 0, 0.24);
+  margin: 0 auto;
 }
 
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
+.seo {
+  box-sizing: border-box;
+  height: 350px;
+  width: 30%;
+  background-color: white;
+  color: #0090ff;
+  float: left;
+  text-align: center;
+  margin-right: 50px;
 }
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
+.photo {
+  box-sizing: border-box;
+  height: 350px;
+  width: 30%;
+  background-color: white;
+  color: #0090ff;
+  float: left;
+  text-align: center;
+  margin-right: 50px;
 }
 
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+.branding {
+  box-sizing: border-box;
+  height: 350px;
+  width: 30%;
+  background-color: white;
+  color: #0090ff;
+  float: left;
+  text-align: center;
 }
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+#services p {
+  max-width: 250px;
+  margin: 0 auto;
+
 }
 
-.invisible {
-    visibility: hidden;
+.service-button {
+  color: white;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 2rem;
+  padding: .5rem .8rem;
+  text-decoration: none;
+  background-color: #0090ff;
+  font-family: 'Roboto Slab';
+  border: solid 1px skyblue;
+  box-shadow: 0px 14px 21px 0px rgba(0, 0, 0, 0.24);
+  display: block;
+  width: 100px;
+  margin: 60px auto;
 }
 
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
+#seo-title, #photo-title, #brand-title {
+  font-size: 2em;
+  padding-bottom: 50px;
 }
 
-.clearfix:after {
-    clear: both;
+#clients {
+  margin-top: 100px;
 }
 
-.clearfix {
-    *zoom: 1;
+.client-wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
+/* TEST RUN
+.client-center {
+  box-sizing: border-box;
+  height: 450px;
+  width: 40%;
+  background-color: #0090ff;
+
+  text-align: left;
+  padding: 5%;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 7px;
+  box-shadow: 0px 14px 21px 0px rgba(0, 0, 0, 0.35);
+  display: inline-block;
+  z-index: 1;
+  position: absolute;
+  margin: 0 auto;
+
 }
 
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
+.client-left {
+  box-sizing: border-box;
+  height: 250px;
+  width: 50%;
+  background-color: #0090ff;
+  float: left;
+  padding: 2.5%;
+  color: white;
+  font-size: 0.9em;
+  border-radius: 5px;
 
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+}
+*/
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+.client-center {
+  box-sizing: border-box;
+  height: 450px;
+  width: 40%;
+  background-color: #0090ff;
+  color: white;
+  float: left;
+  text-align: left;
+  font-size: 1.4em;
+  box-shadow: 0px 14px 21px 0px rgba(0, 0, 0, 0.35);
+  padding: 5%;
+position: absolute;
+  margin: 0 auto;
+  display: inline-block;
+  z-index: 0;
+}
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+.client-left {
+  box-sizing: border-box;
+  height: 350px;
+  width: 30%;
+  background-color: #0090ff;
+  color: white;
+  float: left;
+  text-align: left;
+  font-size: 1.1em;
+  padding: 2.5%;
+  display: inline-block;
+  margin-top: 100px;
+}
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+.client-right {
+  box-sizing: border-box;
+  height: 350px;
+  width: 30%;
+  background-color: #0090ff;
+  color: white;
+  float: right;
+  text-align: left;
+  font-size: 1.1em;
+display: inline-block;
+margin-top: 100px;
+padding: 2.5% 0 0 7%;
+}
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+.client-button {
+  color: #0090ff;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 2rem;
+  padding: .5rem .8rem;
+  text-decoration: none;
+  background-color: white;
+  font-family: 'Roboto Slab';
+  border: solid 1px skyblue;
+  box-shadow: 0px 14px 21px 0px rgba(0, 0, 0, 0.24);
+  position: absolute;
+  display: block;
+  max-width: 40%;
+  margin: 100px auto;
+}
 
-    thead {
-        display: table-header-group;
-    }
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+.contact-wrapper {
+  text-align: center;
+  background-color: #e9f3ff;
+  margin-top: 100px;
+  height: 450px;
+}
 
-    img {
-        max-width: 100% !important;
-    }
+h2 {
+  font-size: 3em;
+  color: #0090ff;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+.contact-button {
+  color: white;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 2rem;
+  padding: .9rem 1.6rem;
+  text-decoration: none;
+  background-color: #0090ff;
+  font-family: 'Roboto Slab';
+  border: solid 1px skyblue;
+  box-shadow: 0px 14px 21px 0px rgba(0, 0, 0, 0.24);
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  font-size: 20px;
+}
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+footer {
+  height: 150px;
+  background-color: white;
+  color: #0090ff;
+  text-align: center;
+  padding-top: 50px;
+
 }
